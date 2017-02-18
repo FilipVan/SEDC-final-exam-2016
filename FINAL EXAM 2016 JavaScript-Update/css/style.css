@@ -1,0 +1,23 @@
+body {
+    background: url(../assets/cover.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#recepie-wrap {
+    border: 1px solid black;
+}
+
+.hide {
+    display: none;
+}
+
+#myForm {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+#recepieList {
+    border: 1px solid green;
+}

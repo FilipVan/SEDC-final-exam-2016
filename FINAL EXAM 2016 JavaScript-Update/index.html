@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exam 2016 - Recepies</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <a id="newRecepie" class="navbar-brand" href="#">Внеси нова рецепта</a>
+    </nav>
+
+
+    <div id="recepie-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="myForm">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="clearOnSave" placeholder="Внеси име на рецепт...">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="origin" class="clearOnSave" placeholder="Внеси потекло на рецепт...">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="time" class="clearOnSave" placeholder="Потребно Време...">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="clearOnSave" id="txtArea" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <table class="table table-inverse" id="table_kolicna">
+                <thead>
+                    <th>
+                        <select name="" class="form-control" id="mySelect">
+                                <option value=""disabled selected>-Состојки-</option>
+                                <option value="брашно">Брашно</option>
+                                <option value="масло">Масло</option>
+                                <option value="млеко">Млеко</option>
+                                <option value="сол">Сол</option>
+                                <option value="шеќер">Шеќер</option>
+                                <option value="домати">Домати</option>
+                                <option value="пиперки">Пиперки</option>
+                                <option value="сирење">Сирење</option>
+                                <option value="кашкавал">Кашкавал</option>
+                                <option value="јајца">Јајца</option>
+                                <option value="компир">Компир</option>
+                                <option value="месо">Месо</option>
+                            </select>
+                    </th>
+                    <th>Количина</th>
+                </thead>
+                <tbody id="ingridient">
+
+                </tbody>
+            </table>
+            <button id="saveRecepie" class="button">Зачувај Рецепта</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table table-inverse hide" id="recepieList">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Име</th>
+                    <th>Потекло</th>
+                    <th>Состојки</th>
+                    <th>Потребно време</th>
+                    <th>Начин на подготовка</th>
+                    <th>Избриши/Прикажи</th>
+                </tr>
+            </thead>
+            <tbody id="listIngridients">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
